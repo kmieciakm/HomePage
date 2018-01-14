@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cousine', monospace;
+    overflow-x: hidden;
+}
+
+/* header */
+.header_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25vh;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    transform: translate(-50%);
+}
+
+.header_image{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/background6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header_dark{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    opacity: 0.3;
+}
+
+.timer{
+    font-size: 3.5rem;
+}
+
+.welcome-container{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.nextline::after{
+    content: "\A";
+    white-space: pre;
+}
+
+.input{
+    color: #333;
+    border: solid 2px #333;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.searchInput{
+    opacity: 0.4;
+}
+
+.searchInput:focus{
+    opacity: 0.8;
+}
+
+.adduserInput{
+    background-color: #C7D3DD;
+    font-size: 1.3rem;
+}
+
+/* add user section*/
+.adduser-container{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #77B6EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adduser{
+    width: 40%;
+    margin-top: -20vh;
+    letter-spacing: 1px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape){
+    .adduser{
+        width: 80%;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .adduser{
+        width: 80%;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .adduser{
+        width: 90%;
+    }
+    html{
+        font-size: 12px;
+    }
+}
